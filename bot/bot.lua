@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 123456789 -- Put Here Your Bot ID
+our_id = 373670309 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -94,20 +94,15 @@ function create_config( )
 	"lock-fosh"
 	
  },
-    sudo_users = {323046540},
+    sudo_users = {373670309},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》energy v3
+    info_text = [[》TeleBot v3
 
 🔰Our channel :
-》@sudo_energy《
+》@DarkPlusTM《
 
-🔰Our channel2 :
-》@rich_energy《
-
-🔰Our website :
-》http://telebombang.blogfa.com
 ]],
   }
   serialize_to_file(config, './data/config.lua')
