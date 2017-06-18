@@ -90,7 +90,7 @@ return {
 	"خوارکصده",
 	"kharko3de",
 	"مادرجنده",
-
+ 
 	--Commands ##Don't change this##
 	"^[!/#]([Ll][Oo][Cc][Kk]) (.*)$",
 	"^[!/#]([Uu][Nn][Ll][Oo][Cc][Kk]) (.*)$",
@@ -99,5 +99,4 @@ return {
   run = run,
   pre_process = pre_process
 }
-
--- http://bom_bang_team
+ 
