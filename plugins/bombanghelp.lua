@@ -3,7 +3,7 @@ if matches[1]:lower() == "help" or matches[1] == 'راهنما' and is_mod(msg) 
 if not lang then
 text = [[
 
-💠 bom_bang Help 💠
+💠#Help💠
 ︻︻︻︻︻︻︻︻︻︻︻︻︻︻
 🔶 !mod help
 ⚙️》راهنما مدریت
@@ -22,13 +22,13 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ︻︻︻︻︻︻︻︻︻︻︻︻︻︻
-🌐 @bom_bang_team 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 
 elseif lang then
 
 text = [[
 
-💠 bom_bang Help 💠
+💠#Help💠
 ︻︻︻︻︻︻︻︻︻︻︻︻︻︻
 🔶 !mod help
 ⚙️》راهنما مدریت
@@ -47,7 +47,7 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ︻︻︻︻︻︻︻︻︻︻︻︻︻︻
-🌐 @bom_bang_team 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 end
 return text
 end
@@ -112,7 +112,7 @@ lock = [[
 🔹lock mention 
 🔸unlock mention
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 
 elseif lang then
 
@@ -174,7 +174,7 @@ lock = [[
 🔹lock mention 
 🔸unlock mention
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntispamBot 🌐 ;)]]
 end
 return lock
 end
@@ -239,7 +239,7 @@ lock2 = [[
 🔹 !lock inline
 🔸 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 
 elseif lang then
 
@@ -301,7 +301,7 @@ lock2 = [[
 🔹 !lock inline
 🔸 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 end
 return lock2
 end
@@ -412,7 +412,7 @@ helpfun = [[
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 else
 
@@ -520,7 +520,7 @@ helpfun = [[
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 end
 end
@@ -627,7 +627,7 @@ text = [[
 ⚜️ !leave [GroupID]
 ✰》 خارج شدن ربات از گروه مورد نظر
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
@@ -711,7 +711,7 @@ Set Expire Time For Group
 
 !leave [GroupID]
 Leave Bot From Specific Group
-🌐 @bombangteam 🌐 ;)]]
+🌐 #AntiSpamBot 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 end
