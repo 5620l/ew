@@ -317,7 +317,7 @@ tdcli_function ({
   }, rem_owner_cb, {chat_id=data.chat_id_,user_id=data.sender_user_id_})
   end
     if cmd == "demote" then
-local function demote_cb(arg, data)
+local function demote_cb(arg, data) 				
     local administration = load_data(_config.moderation.data)
 if data.username_ then
 user_name = '@'..check_markdown(data.username_)
@@ -1419,10 +1419,10 @@ local expiretime = redis:hget('expiretime', msg.chat_id_)
 	
 if not lang then
 local settings = data[tostring(target)]["settings"] 
- text = "⚙️*Group Settings*⚙️\n*__________________*\n● 》_Lock edit ➢_ *"..settings.lock_edit.."*\n● 》_Lock links ➢_ *"..settings.lock_link.."*\n● 》_Lock fosh ➢_ *"..settings.lock_fosh.."*\n● 》_Lock tags ➢_ *"..settings.lock_tag.."*\n● 》_Lock Persian ➢_ *"..settings.lock_arabic.."*\n● 》_Lock flood ➢_ *"..settings.flood.."*\n● 》_Lock spam ➢_ *"..settings.lock_spam.."*\n● 》_Lock mention ➢_ *"..settings.lock_mention.."*\n● 》_Lock webpage ➢_ *"..settings.lock_webpage.."*\n● 》_welcome ➢_ *"..settings.welcome.."*\n● 》_Lock markdown ➢_ *"..settings.lock_markdown.."*\n● 》_Lock Bots ➢_ *"..settings.lock_bots.."*\n● 》_Lock gif ➢_ *"..settings.lock_gif.."*\n● 》_Lock text ➢_ *"..settings.lock_text.."*\n● 》_Lock inline ➢_ *"..settings.lock_inline.."*\n● 》_Lock game ➢_ *"..settings.lock_game.."*\n● 》_Lock photo ➢_ *"..settings.lock_photo.."*\n● 》_Lock video ➢_ *"..settings.lock_video.."*\n● 》_Lock audio ➢_ *"..settings.lock_audio.."*\n● 》_Lock voice ➢_ *"..settings.lock_voice.."*\n● 》_Lock sticker ➢_ *"..settings.lock_sticker.."*\n● 》_Lock contact ➢_ *"..settings.lock_contact.."*\n● 》_Lock forward ➢_ *"..settings.lock_forward.."*\n● 》_Lock location ➢_ *"..settings.lock_location.."*\n● 》_Lock document ➢_ *"..settings.lock_document.."*\n● 》_Lock TgService ➢_ *"..settings.lock_tgservice.."*\n● 》_Lock all : _ *"..settings.lock_all.."*\n*__________________*\n● 》_Set Flood ➢_ *"..NUM_MSG_MAX.."*\n● 》_Welcome ➢_ *"..settings.welcome.."*\n● 》_EXPIRE ➢_ *"..expire.."*\n*__________________*\n Enable✓ ➰ Disable✘ \n*__________________*\n support: @bombangteam \n*__________________*\n*Language* : *EN*"
+ text = "⚙️*Group Settings*⚙️\n*__________________*\n● 》_Lock edit ➢_ *"..settings.lock_edit.."*\n● 》_Lock links ➢_ *"..settings.lock_link.."*\n● 》_Lock fosh ➢_ *"..settings.lock_fosh.."*\n● 》_Lock tags ➢_ *"..settings.lock_tag.."*\n● 》_Lock Persian ➢_ *"..settings.lock_arabic.."*\n● 》_Lock flood ➢_ *"..settings.flood.."*\n● 》_Lock spam ➢_ *"..settings.lock_spam.."*\n● 》_Lock mention ➢_ *"..settings.lock_mention.."*\n● 》_Lock webpage ➢_ *"..settings.lock_webpage.."*\n● 》_welcome ➢_ *"..settings.welcome.."*\n● 》_Lock markdown ➢_ *"..settings.lock_markdown.."*\n● 》_Lock Bots ➢_ *"..settings.lock_bots.."*\n● 》_Lock gif ➢_ *"..settings.lock_gif.."*\n● 》_Lock text ➢_ *"..settings.lock_text.."*\n● 》_Lock inline ➢_ *"..settings.lock_inline.."*\n● 》_Lock game ➢_ *"..settings.lock_game.."*\n● 》_Lock photo ➢_ *"..settings.lock_photo.."*\n● 》_Lock video ➢_ *"..settings.lock_video.."*\n● 》_Lock audio ➢_ *"..settings.lock_audio.."*\n● 》_Lock voice ➢_ *"..settings.lock_voice.."*\n● 》_Lock sticker ➢_ *"..settings.lock_sticker.."*\n● 》_Lock contact ➢_ *"..settings.lock_contact.."*\n● 》_Lock forward ➢_ *"..settings.lock_forward.."*\n● 》_Lock location ➢_ *"..settings.lock_location.."*\n● 》_Lock document ➢_ *"..settings.lock_document.."*\n● 》_Lock TgService ➢_ *"..settings.lock_tgservice.."*\n● 》_Lock all : _ *"..settings.lock_all.."*\n*__________________*\n● 》_Set Flood ➢_ *"..NUM_MSG_MAX.."*\n● 》_Welcome ➢_ *"..settings.welcome.."*\n● 》_EXPIRE ➢_ *"..expire.."*\n*__________________*\n Enable✓ ➰ Disable✘  \n*__________________*\n*Language* : *EN*"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "⚙️*تنظیمات سوپرگروه*⚙️\n*__________________*\n● 》_قفل ویرایش ↫_ *"..settings.lock_edit.."*\n● 》_قفل لینک ↫_ *"..settings.lock_link.."*\n● 》_قفل فحش ↫_ *"..settings.lock_fosh.."*\n● 》_قفل تگ ↫_ *"..settings.lock_tag.."*\n● 》_قفل فارسی ↫_ *"..settings.lock_arabic.."*\n● 》_قفل فلود ↫_ *"..settings.flood.."*\n● 》_قفل اسپم ↫_ *"..settings.lock_spam.."*\n● 》_قفل فراخوانی ↫_ *"..settings.lock_mention.."*\n● 》_قفل وبسایت ↫_ *"..settings.lock_webpage.."*\n● 》_قفل فونت ↫_ *"..settings.lock_markdown.."*\n● 》_قفل ربات ↫_ *"..settings.lock_bots.."*\n● 》_قفل گیف ↫_ *"..settings.lock_gif.."*\n● 》_قفل متن ↫_ *"..settings.lock_text.."*\n● 》_قفل اینلاین ↫_ *"..settings.lock_inline.."*\n● 》_قفل بازی ↫_ *"..settings.lock_game.."*\n● 》_قفل عکس ↫_ *"..settings.lock_photo.."*\n● 》_قفل فیلم ↫_ *"..settings.lock_video.."*\n● 》_قفل موزیک ↫_ *"..settings.lock_audio.."*\n● 》_قفل صدا ↫_ *"..settings.lock_voice.."*\n● 》_قفل استیکر ↫_ *"..settings.lock_sticker.."*\n● 》_قفل اطلاعات تماس ↫_ *"..settings.lock_contact.."*\n● 》_قفل فوروارد ↫_ *"..settings.lock_forward.."*\n● 》_قفل موقعیت ↫_ *"..settings.lock_location.."*\n● 》_قفل فایل ↫_ *"..settings.lock_document.."*\n● 》_قفل خدمات تلگرام ↫_ *"..settings.lock_tgservice.."*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_قفل همه ↫ _ *"..settings.lock_all.."*\n*__________________*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_خوشآمد گویی ↫_ *"..settings.welcome.."*\n● 》_شارژ گروه ↫_ *"..expire.."*\n*__________________*\n فعال✓ ➰ غیرفعال✘ \n*__________________*\n پشتیبان: @bombangteam \n*__________________*\n*زبان ربات* ↫ *فارسی*"
+ text = "⚙️*تنظیمات سوپرگروه*⚙️\n*__________________*\n● 》_قفل ویرایش ↫_ *"..settings.lock_edit.."*\n● 》_قفل لینک ↫_ *"..settings.lock_link.."*\n● 》_قفل فحش ↫_ *"..settings.lock_fosh.."*\n● 》_قفل تگ ↫_ *"..settings.lock_tag.."*\n● 》_قفل فارسی ↫_ *"..settings.lock_arabic.."*\n● 》_قفل فلود ↫_ *"..settings.flood.."*\n● 》_قفل اسپم ↫_ *"..settings.lock_spam.."*\n● 》_قفل فراخوانی ↫_ *"..settings.lock_mention.."*\n● 》_قفل وبسایت ↫_ *"..settings.lock_webpage.."*\n● 》_قفل فونت ↫_ *"..settings.lock_markdown.."*\n● 》_قفل ربات ↫_ *"..settings.lock_bots.."*\n● 》_قفل گیف ↫_ *"..settings.lock_gif.."*\n● 》_قفل متن ↫_ *"..settings.lock_text.."*\n● 》_قفل اینلاین ↫_ *"..settings.lock_inline.."*\n● 》_قفل بازی ↫_ *"..settings.lock_game.."*\n● 》_قفل عکس ↫_ *"..settings.lock_photo.."*\n● 》_قفل فیلم ↫_ *"..settings.lock_video.."*\n● 》_قفل موزیک ↫_ *"..settings.lock_audio.."*\n● 》_قفل صدا ↫_ *"..settings.lock_voice.."*\n● 》_قفل استیکر ↫_ *"..settings.lock_sticker.."*\n● 》_قفل اطلاعات تماس ↫_ *"..settings.lock_contact.."*\n● 》_قفل فوروارد ↫_ *"..settings.lock_forward.."*\n● 》_قفل موقعیت ↫_ *"..settings.lock_location.."*\n● 》_قفل فایل ↫_ *"..settings.lock_document.."*\n● 》_قفل خدمات تلگرام ↫_ *"..settings.lock_tgservice.."*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_قفل همه ↫ _ *"..settings.lock_all.."*\n*__________________*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_خوشآمد گویی ↫_ *"..settings.welcome.."*\n● 》_شارژ گروه ↫_ *"..expire.."*\n*__________________*\n فعال✓ ➰ غیرفعال✘ \n*__________________* \n*زبان ربات* ↫ *فارسی*"
 end
 if not lang then
 text = string.gsub(text, "yes", "✓")
@@ -2870,7 +2870,7 @@ end
 if matches[1] == "راهنما" and is_mod(msg) then
 if not lang then
 text = [[
-bom bang help
+📄help
 ------------------
 mod help 
 راهنما مدیریت
@@ -2904,7 +2904,7 @@ lock help2
 sudo help 
 راهنما سودو
 ------------------
-ch : @bombangteam
+#AntiSpamBot
 ------------------
 ]]
 end
@@ -2912,9 +2912,7 @@ return text
 end
 
 if matches[1] == "انلاینی" and is_mod(msg) then
-text5 = [[
-✔️اره انلاینم✔️
-]]
+text5 = [[	📍آنلاینم📍]]
 return text5 
 end
 end
@@ -2973,5 +2971,4 @@ patterns ={
 run=run,
 pre_process = pre_process
 }
--- کد های پایین در ربات نشان داده نمیشوند
--- @bom_bang_team
+-
