@@ -19,10 +19,17 @@ screen ./Nebron.sh
 
 ربات شما راه اندازی میشود
  ◼◼◼◼◼◼◼◼
+ 
  #AutoLaunch
+ 
  cd TeleBot
+ 
 chmod 777 autoBot.sh
+
 screen ./autoBot.sh
+
  ##channel: @DarkPlusTM
+ 
  ##Editor Id: @MR_Funcation
+ 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
